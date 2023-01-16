@@ -1,0 +1,201 @@
+
+
+@font-face {
+    font-family:'gothan' ;
+    src: url('fontes/Gotham-Black.otf');
+
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fontes/BebasNeue-Regular.ttf');
+}
+
+*{
+    margin:0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    
+
+}
+
+body {
+    background-color: #111111;
+}
+
+@keyframes lado{
+    from{
+        transform: translateY(29px) rotate(50deg);
+    }
+}
+
+.tubo{
+    position: fixed;
+    left: 1369.02px;
+    top: 472.19px;
+    animation: lado 12s infinite alternate-reverse;
+ }
+
+
+.bola{
+    position: fixed;
+    left: 311px;
+    top: 450px; 
+    animation: lado 6s infinite alternate-reverse;
+ }
+
+.triangulo{
+    position: fixed;
+    left: 761px;
+    top: 70px;
+    transform: rotate(-8.86deg);
+    animation: lado 21s infinite alternate-reverse;
+}
+
+.borda{
+    box-sizing: border-box;
+    position: absolute;
+    width: 987px;
+    height: 530px;
+    left: 466px;
+    top: 214px;
+    border: 1px solid #FFFFFF;
+ } 
+
+ .muito{
+    position: absolute;
+    width: 407px;
+    height: 101px;
+    left: 764px;
+    top: 322px;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+ }
+
+ .msg-enviada{
+    position: absolute;
+    width: 217px;
+    height: 41px;
+    left: 851px;
+    top: 494px;
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+ }
+
+ .ret-botao{
+    box-sizing: border-box;
+    position: absolute;
+    width: 267px;
+    height: 73px;
+    left: 826px;
+    top: 600px;
+    transition: .4s;
+    background: linear-gradient(90deg, #2C2C2C 2.46%, #151515 100%);
+    border-radius: 9px;
+    
+ }
+ 
+ .ret-botao:hover {
+     border-radius: 38px;
+     transition: .2s;
+     border: #ffffff 1px;
+     border-style: solid;
+ }
+ 
+ 
+ .ret-botao a{
+    position: fixed;
+    width: 267px;
+    height: 42px;
+    left: 857px;
+    top: 620px;
+    font-family: 'Gotham Black';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 33px;
+    background: linear-gradient(90.05deg, #E9F7FF 4%, #86F6FF 35.88%, #7E83FF 99.39%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+ }
+
+ @media screen and (max-width: 510px) {
+    .borda{
+      left: 54px;
+      max-width: calc(100% - 40px);
+      width: 396px;
+      height: 845px;
+      top: 34px;
+    }
+
+    .triangulo{
+        left: 20px;
+        top: 1px;
+        
+    
+    }
+    
+
+    .bola{
+        left: 220px;
+        top: 620px; 
+    }
+    
+ 
+    .muito {
+        position: fixed;
+        width: 407px;
+        height: 101px;
+        left: 94px;
+        top: 256px;
+        font-family: 'Gotham Black';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 61px;
+        
+        
+  
+    }
+
+    
+
+    .msg-enviada{
+        left: 145px;
+        top: 408px;
+        font-size: 19px;
+    }
+    
+    .ret-botao{
+        left: 117px;
+        top: 530px;
+    }
+
+    .ret-botao a{
+        left: 156px;
+        top: 548px;
+        font-size: 28px;
+    }
+ }
+
+ 

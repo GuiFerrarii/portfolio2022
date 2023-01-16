@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@font-face {
+    font-family:'gothan' ;
+    src: url('fontes/Gotham-Black.otf');
+
+}
+
+@font-face {
+    font-family: 'bebas';
+    src: url('fontes/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family:'TypoGraphica' ;
+    src: url('fontes/TypoGraphica_demo.otf');
+}
+
+
+
+
+body {
+    background-color: #111111;
+}
+
+.social-menu ul{
+  position: absolute;
+  top: 74%;
+  left: 60%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.social-menu ul li{
+  list-style: none;
+  margin: 0 10px;
+}
+
+.social-menu ul li .fab{
+  font-size: 20px;
+  top: 15px;
+  position: relative;
+  line-height: 11px;
+  transition: .3s;
+  color: rgb(255, 255, 255)
+}
+
+.social-menu ul li .fab:hover{
+  color: #fff;
+}
+
+/* background: linear-gradient(90deg, #29262E 1.8%, #201F25 53.02%, #1A1A1C 100%); */
+
+.social-menu ul li a{
+  position: relative;
+  display: block;
+  width:  46px;
+  height: 46px;
+  border-radius: 9%;
+  
+  text-align: center;
+  transition: .3s;
+  
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+  background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+  background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+  background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+  background-color: #ED4989;
+}
+
+.borda{
+    box-sizing: border-box;
+    position: fixed ;
+    width: 1814px;
+    height: 852px;
+    left: 49px;
+    top: 51px;
+    border: 1px solid #FFFFFF;
+ } 
+ 
+
+.proj{
+  position: absolute;
+  width: 158px;
+  height: 25px;
+  left: 1608px;
+  top: 92px;
+  font-family: 'Gotham Black';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.145em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+.proj:after {
+	content: '';
+  position: absolute;
+  left: -10px;
+  display: inline-block;
+  height: 1em;
+  width: 50%;
+  border-bottom: 1px solid;
+  margin-top: 9px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+    color: rgb(255, 255, 255);
+}
+
+  .proj:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.home{
+  position: absolute;
+    width: 127px;
+    height: 25px;
+    left: 1739px;
+    top: 92px;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.home:after {
+	content: '';
+  position: absolute;
+  left: -10px;
+  display: inline-block;
+  height: 1em;
+  width: 35%;
+  border-bottom: 1px solid;
+  margin-top: 9px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+    color: rgb(255, 255, 255);
+}
+
+  .home:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.linha-meio{
+    position: absolute;
+    width: 911px;
+    height: 0px;
+    left: 722px;
+    top: 410px;
+    background: #D9D9D9;
+    border: 1px solid #D9D9D9;
+  }
+
+  .foto{
+    position: absolute;
+left: 200px;
+top: 243px;
+}
+
+/* .foto{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(1%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.foto:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(100%);
+} */
+
+
+
+figcaption{
+  position: fixed;
+  left: 0; right: 0;
+  top: 315px; left: 255px;
+  text-align: center;
+  font-weight: bold;
+  width: 20%;
+  height: 65%;
+  display: table;
+}
+
+figcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  font-size: 15px;
+  top: 200px;
+  opacity: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition: .3s;
+  font-family: 'Gotham Black';
+}
+
+figcaption div a{
+  color: #52e6fa;
+  text-decoration: none;
+  
+}
+
+
+
+figure:hover figcaption{
+  background: rgba(245, 243, 243, 0.3);
+ }
+ 
+ figcaption:hover div{
+   opacity: 1;
+   top: 0;
+ }
+ 
+ figcaption:hover div:after{
+   width: 0%;
+ }
+
+
+
+  
+
+ 
+
+
+    
+    
+
+ 
+  .sobre-mim{
+    position: absolute;
+    width: 442px;
+    height: 99px;
+    left: 737px;
+    top: 270px;
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 62px;
+    line-height: 69px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #FFFFFF;
+  
+  }
+
+  .texto{
+    position: absolute;
+    width: 885px;
+    height: 142px;
+    left: 736px;
+    top: 470px;
+    
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #FAFAFA;
+    
+  }
+
+  .img-semfoco{
+    position: fixed;
+    left: -65.85px;
+    top: 65px;
+    
+    transform: rotate(112.39deg);
+    animation: updown 14s  infinite alternate-reverse;
+}
+
+
+
+@keyframes updown{
+    from{
+        transform: translateX(50px) rotate(0deg);
+    }
+   
+    
+}
+
+  
+
+  .botao{
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 255.51px;
+    height: 55px;
+    left: 735px;
+    top: 670px;
+    transition: .4s;
+    
+    background: linear-gradient(90deg, #2C2C2C 2.46%, #151515 100%);
+    border-radius: 9px;
+  }
+
+  .botao a{
+    position: fixed;
+    width: 197px;
+    height: 29px;
+    left: 767px;
+    top: 685px;
+    
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    
+    background: linear-gradient(90deg, #E9F7FF 0%, #86F6FF 0%, #7E83FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   
+
+  }
+
+
+
+.botao:hover {
+  border-radius: 40px;
+  transition: .4s;
+  border: #ffffff 1px;
+  border-style: solid;
+  
+}
+
+
+
+.botao:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 510px) {
+  .borda{
+    left: 54px;
+    
+    max-width: calc(100% - 40px);
+    width: 396px;
+    height: 845px;
+    top: 34px;
+  }
+
+  .img-semfoco img{
+    width:  200px;
+    height: 200px;
+    
+    
+  }
+
+  .foto img {
+    height:  230px;
+    width:   230px;
+    top: -100px;
+    position: relative;
+    left: -59px;
+    
+  }
+
+  .proj{
+    left: 208px;
+    top: 80px;
+  }
+
+  .proj:after{
+    margin-top: 7px;
+  }
+  
+  .home{
+    left: 230px;
+    top: 55px;
+  }
+
+  .home:after{
+    margin-top: 7px;
+  }
+
+  
+
+  .social-menu ul li a{
+    position: relative;
+    display: block;
+    width:  37px;
+    height: 37px;
+    border-radius: 9%;
+    transition: .3s;
+    top: 133px;
+    left: -50px;
+}
+
+  .social-menu ul li .fab{
+  font-size:  18px;
+}
+
+  figcaption div{
+    display: none;
+  }
+
+  .linha-meio{
+    display: none;
+  }
+
+  .sobre-mim{
+    display: none;
+  }
+
+  .texto{
+    position: absolute;
+    width: 273px;
+    height: 253px;
+    left: 121px;
+    top: 412px;
+    
+    font-family: 'Bebas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+    
+    color: #FAFAFA;
+  }
+
+  .botao{
+    box-sizing: border-box;
+
+    position: fixed;
+    width: 255.51px;
+    height: 55px;
+    left: 126px;
+    top: 710px;
+    transition: .4s;
+    
+    background: linear-gradient(90deg, #2C2C2C 2.46%, #151515 100%);
+    border-radius: 9px;
+  }
+
+  .botao a{
+    position: fixed;
+    width: 197px;
+    height: 29px;
+    left: 155px;
+    top: 725px;
+    
+    font-family: 'Gotham Black';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    
+    background: linear-gradient(90deg, #E9F7FF 0%, #86F6FF 0%, #7E83FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+   
+
+  }
+
+ 
+
+
+  
+
+}
